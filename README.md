@@ -39,7 +39,8 @@ Use the normal CMS tools to supervise your jobs https://twiki.cern.ch/twiki/bin/
 
 
 to copy a file to your local area, use:
+```
 xrdcp root://cms-xrd-global.cern.ch//store/mc/RunIISummer16NanoAOD/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/NANOAODSIM/PUMoriond17_05Feb2018_94X_mcRun2_asymptotic_v2_ext2-v1/40000/7219ED10-E510-E811-B946-D4856460625A.root .
-
+```
     
 
