@@ -17,7 +17,7 @@ compile the Analyzer
 
 #Run the submission
 * Add your config to the analyzer
-* Test that the analyzer runs locally!!
+* *Test that the analyzer runs locally!!* Attention: crab will submbit everything in the data folder, so you might not want to put a large file in the data folder
 * Make a text file with the samples you want to submit:
 ```
 dasgoclient -query="dataset=/DY*/RunIISummer16NanoAOD-PUMoriond17_05Feb2018_94X_mcRun2_*/NANOAODSIM" > 05Feb2018_94X_MC.txt
