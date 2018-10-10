@@ -9,8 +9,9 @@ git-cms-init
 cmsenv
 git clone https://github.com/cms-nanoAOD/nanoAOD-tools.git PhysicsTools/NanoAODTools
 git clone git@github.com:BSM3G/crab_submission.git BSM3GAna/BSM3GAna/test
-scram b -j8
+scram b -j8 # if you are brave
 git clone git@github.com:BSM3G/Analyzer.git BSM3GAna/BSM3GAna/data/Analyzer
+scram b -j8
 ```
 compile the Analyzer
 
