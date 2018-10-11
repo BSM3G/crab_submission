@@ -108,7 +108,8 @@ def megeRootFiles(options):
     if not os.path.exists(outputFolder):
         os.makedirs(outputFolder)
     for sample in glob.glob(options.inputFolder+"/*"):
-        samplelist=glob.glob(sample+"/*.root")
+        #print(glob.glob(sample+"*/*/*/*/*"))
+	samplelist=glob.glob(sample+"*/*/*/*/*.root")
         for s in range(len(samplelist)):
             samplelist[s]=samplelist[s].replace("/eos/uscms//","root://cmseos.fnal.gov//")
         #if os.path.isfile(sample):
