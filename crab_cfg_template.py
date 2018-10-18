@@ -1,9 +1,7 @@
 from WMCore.Configuration import Configuration
 from CRABClient.UserUtilities import config, getUsernameFromSiteDB
-from datetime import datetime
 
 config = Configuration()
-date_time = datetime.now()
 
 config.section_("General")
 config.General.requestName = 'NanoBSM3G_$SHORTSAMPLE'
@@ -19,17 +17,17 @@ config.section_("Data")
 config.Data.inputDataset = '$SAMPLE'
 #config.Data.inputDBS = 'phys03'
 config.Data.inputDBS = 'global'
-config.Data.splitting = 'EventBased'
+config.Data.splitting = 'FileBased'
 #config.Data.splitting = 'EventAwareLumiBased'
-config.Data.unitsPerJob = 300000
-#config.Data.totalUnits = 10
+config.Data.unitsPerJob = 6
+#config.Data.totalUnits = 
 
 config.Data.outLFNDirBase = '/store/user/%s/$OUTPUTDIR' % (getUsernameFromSiteDB())
 config.Data.publication = False
 config.Data.outputDatasetTag = 'NanoBSM3G_$SHORTSAMPLE'
 config.section_("Site")
 config.Site.storageSite = "T3_US_FNALLPC"
-config.JobType.allowUndistributedCMSSW = True 
+
 #config.Site.storageSite = "T2_CH_CERN"
 #config.section_("User")
 #config.User.voGroup = 'dcms'

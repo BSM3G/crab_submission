@@ -91,6 +91,7 @@ def make_config(sample, options):
     d=dict(
         SAMPLE=sample,
         SHORTSAMPLE=short_name,
+        OUTPUTDIR=options.outputFolder,
     )
     
     file=open("crab_cfg_template.py","r")
