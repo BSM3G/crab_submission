@@ -30,7 +30,7 @@ if os.path.exists(output_file):
     
 cwd=os.getcwd()
 os.chdir(bin_path)
-command="./Analyzer -in "+" ".join(inputFiles())+" -out "+output_file+" -C PartDet"
+command="make clean; make ;./Analyzer -in "+" ".join(inputFiles())+" -out "+output_file+" -C PartDet"
 # command="./Analyzer -in "+inputFiles+" -out output.root -C PartDet -t"
 print "Command: "+command
 # subprocess.call(command, shell=True, stderr=subprocess.STDOUT,)
